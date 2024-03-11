@@ -1,0 +1,120 @@
+body{
+  font-family: 'roboto' sans-serif;
+}
+.hero-container {
+  background-image: url(../Assets/Bricks.jpg);
+  color: #FFF44F;
+  -webkit-text-stroke: 3px #000000  ;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.content-container {
+  background-color: #FFF44F;
+  min-height: 600px;
+}
+.content-container li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-head img{
+  width: 100%;
+  max-width: 600rem;
+  height: auto;
+}
+
+.accordion-container {
+  background-color: #FFF44F;
+  height: 800px;
+  color: #000000;
+  height: 800px;
+}
+
+.accordion {
+    background-color: #0ff;
+    color: #444; 
+    cursor: pointer; 
+    padding: 18px; 
+    width: 100%; 
+    border: solid; 
+    text-align: left; 
+    outline: none; 
+    font-size: 20px; 
+    transition: 0.4s; 
+  }
+  
+  /* Change background color when moving over button */
+  .accordion:hover {
+    background-color: #ccc; /* Darker grey */
+  }
+  
+
+  .accordion.active {
+    background-color: #ccc; /* Darker grey */
+    color: white; /* White text */
+  }
+  
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  color: #444;
+  display: none;
+  overflow: hidden;
+}
+ 
+.footer-container {
+  background-color: #FFF44F;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.links{
+  margin: 5rem;
+}
+
+.links a{
+  text-decoration: underline;
+  color: black;
+}
+
+
+.footer-container iframe{
+  width: 100%;
+  max-width: 40rem;
+} 
+
+.copyright{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-bottom: 2rem;
+
+}
+
+@media screen and (min-width: 1200px) {
+.content-container li {
+  flex-direction: row;
+}
+.content-head {
+  margin-right: 5rem;
+}
+.footer-container{
+  flex-direction: row;
+}
+}
+
